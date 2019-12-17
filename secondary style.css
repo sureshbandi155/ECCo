@@ -1,0 +1,941 @@
+/*--------- Theme Base Colors ----------*/
+
+{% set baseColor            =  '#0c296a' %}  /* How do I change the standard font color? */
+{% set headingTextColor     =  '#000000' %}
+{% set secondaryTextColor   =  '#0a2360' %}
+{% set ctaTextColor         =  '#ffffff' %}
+{% set ctaBackgroundColor   =  '#ff9428' %}
+
+
+/*-------------Font Family------------*/
+
+{% set baseFontFamily = " 'Arial' " %}   /*** change the standard font **/
+{% set secondryFontFamily  = " 'Arial Rounded MT'" %}
+{% set headingFontFamily   = "'HelveticaNeue'"  %}
+{% set popinsFontFamily    = "'Poppins', sans-serif" %}
+{% set anuratiFontFamily   = "'Anurati'" %}
+{% set heitiScFontFamily   = "'AdobeHeitiStd-Regular-Alphabetic'" %}
+{% set helveticaFontFamily   = "'Helvetica'" %}
+
+.service-banner-section {
+    padding: 124px 0 216px;
+
+}
+.service-banner-section h1{
+font-family: {{ heitiScFontFamily }};
+font-weight: 300;
+}
+
+body .container-fluid .row-fluid .service-banner-section a.cta_button[title]{
+    border-radius: 50px;
+    padding: 17px 49px;
+    font-size: 18px;
+font-family: {{ heitiScFontFamily }};
+}
+
+.service-banner-section ul{
+    margin: 0;
+    margin-bottom: 39px;
+}
+
+.service-banner-section ul li{
+    display: inline-block;
+}
+
+.service-banner-section ul li img {
+    width: 15px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+    top: -1.7px;
+}
+
+.service-banner-section ul li a {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    padding: 0px 5px 8px 5px;
+    position: relative;
+    top: -2px;
+}
+
+.body-container-wrapper .service-banner-section ul li:first-child {
+    margin-left: 0;
+}
+
+.body-container-wrapper .service-banner-section ul li {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 767px) {
+    .service-banner-section ul{
+        margin-bottom: 29px;
+    }
+    .service-banner-section {
+        padding: 60px 0;
+
+    }
+    body .container-fluid .row-fluid  .service-banner-section a.cta_button[title]{
+        display: inline-block;
+    font-family: {{ heitiScFontFamily }};
+font-weight: 300;
+}
+}
+
+/*==================================================================
+Ecco Services Result Section Styling
+=====================================================================*/
+
+.services-result-section{
+    padding: 45px 0 80px;
+}
+.services-result-section h2{
+font-family: {{ helveticaFontFamily }};
+font-weight: 400;
+padding-bottom: 20px;
+}
+.services-result-section h3{
+color: {{ secondaryTextColor }};
+font-size: 32px;
+line-height: 38px;
+font-weight: 400;
+padding-bottom: 15px;
+}
+.services-result-section .health-card h6, .services-result-section .health-card p{
+font-family: {{ helveticaFontFamily }};
+font-weight: bold;
+font-size: 14px;
+color: #000;
+}
+.services-result-section .logo-heading-section  img{
+    padding-bottom: 20px;
+}
+.services-result-section .logo-heading-section{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+.services-result-section a{
+color: {{ headingTextColor }};
+font-weight: bold;
+font-family: {{ helveticaFontFamily }};
+line-height: 17px;
+font-size: 14px;
+-webkit-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+.services-result-section a:hover{
+color: {{ baseColor}};
+}
+.services-result-section a span{
+    padding-left: 5px;
+}
+.services-result-section .health-card img{
+    /*       margin-bottom: 21px; */
+    max-width: 268px;
+    min-height: 115px;
+}
+.services-result-section .health-card h6{
+    padding-bottom: 9px;
+}
+.services-result-section .health-card p{
+    padding-bottom: 11px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 17px;
+}
+.services-result-section .text-section{
+    max-width: 258px;
+    margin-top: 21px;
+}
+.services-result-section .health-card .image-section{
+    position: relative;
+    cursor: pointer;
+    /*   min-height: 115px; */
+}
+.services-result-section .health-card .image-section:after {
+    border: 7px solid #fff;
+    position: absolute;
+    top: 9px;
+    bottom: 0;
+    width: 233px;
+    height: 84px;
+    border-top-left-radius: 39px;
+    left: 11px;
+    content: '';
+}
+.services-result-section .hover-link{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(10,36,97,0.7803921568627451);
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.services-result-section .hover-link a{
+    color: #fff;
+    font-size: 16px;
+
+}
+.services-result-section .image-section:hover .hover-link {
+    opacity: 1;
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+
+body .container-fluid .row-fluid .services-result-section .three-col-adjust>span{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 0;
+}
+
+@media (min-width: 768px)  {
+    body .row-fluid .services-result-section .three-col-adjust span>.hs_cos_wrapper{
+        margin-top: 3.93%;
+
+    }
+    body .row-fluid .services-result-section .three-col-adjust span>.hs_cos_wrapper:last-child{
+        margin-right: 0;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    body .row-fluid .services-result-section .three-col-adjust span>.hs_cos_wrapper{
+        flex-basis: 22.4%;
+        -webkit-flex-basis: 22.4%;
+        margin-right: 12.13%;
+    }
+    body .row-fluid .services-result-section .three-col-adjust span>.hs_cos_wrapper:nth-child(3n){
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1108px) {
+    body .row-fluid .services-result-section .three-col-adjust span>.hs_cos_wrapper{
+        margin-right: 7.93%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .services-result-section h3{
+        font-size: 26px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 914px) {
+    .services-result-section .health-card img{
+        max-width: 100%;
+    }
+    .services-result-section .health-card .image-section:after{
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 200px;
+        height: 83px;
+        top: 3px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .services-result-section{
+        padding: 45px 0 ;
+        text-align: center;
+    }
+    .services-result-section img{
+        margin: 0 auto;
+        display: block;
+    }
+    .services-result-section .text-section{
+        max-width: inherit;
+        margin-top: 21px;
+    }
+
+    .services-result-section h3{
+        font-size: 22px;
+        line-height: 1.2;
+        padding-bottom: 0;
+    }
+
+    .services-result-section .health-card .image-section:after{
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+    }
+
+    .services-result-section .hover-link{
+        max-width: 268px;
+        right: 0;
+        margin: auto;
+    }
+
+    .services-result-section h2{
+        padding-bottom: 15px;
+    }
+
+    .services-result-section .logo-heading-section img {
+        padding-bottom: 15px;
+    }
+}
+
+/************Ecco Index Form-1576129837008 Module ****************/
+
+.ecco-index-form-module{
+    background:#0A2360;
+    padding: 137px 0px 103px;
+}
+
+body .row-fluid .ecco-index-form-module .wrapper{
+    max-width: 900px;
+}
+
+body .row-fluid .ecco-index-form-module h3.form-title{
+font-family: {{ helveticaFontFamily }};
+font-size: 30px;
+line-height: 36px;
+color: #fff;
+}
+
+.row-fluid .ecco-index-form-module form input,
+.row-fluid .ecco-index-form-module form select{
+    height: 50px;
+    border-radius: 33px;
+    padding-lefT: 24px;
+}
+
+.row-fluid .ecco-index-form-module form textarea{
+    border-radius:33px;
+    height: 103px;
+    padding-lefT: 24px;
+}
+
+body .container-fluid .row-fluid .ecco-index-form-module form .hs-button{
+    background: #fff;
+    border-radius: 33px;
+    color: #0A2360;
+font-family: {{ helveticaFontFamily }};
+font-size: 23px;
+line-height: 28px;
+text-transform: none;
+letter-spacing: 0px;
+padding: 12px 30px;
+width: 24%;
+margin-top: 12px;
+}
+
+body .container-fluid .row-fluid .ecco-index-form-module form .actions{
+    text-align:right;
+}
+
+.ecco-index-form-module form input::-webkit-input-placeholder {
+    color: #B4B4B4;
+    font-size:16px;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+.ecco-index-form-module form input:-moz-placeholder {
+    color: #B4B4B4;
+    font-size:16px;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+.ecco-index-form-module form input::-moz-placeholder {
+    color: #B4B4B4;
+    font-size:16px;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+.ecco-index-form-module form input:-ms-input-placeholder {
+    color: #B4B4B4;
+    font-size:16px;
+    text-transform:uppercase;
+    font-weight:700;
+}
+.row-fluid .ecco-index-form-module form input, .row-fluid .ecco-index-form-module form select, .row-fluid .ecco-index-form-module form textarea{
+    font-weight: bold;
+}
+.ecco-index-form-module .submitted-message{
+    text-align:center;
+    color:#fff;
+    padding-top:20px;
+    font-size:18px;
+}
+
+.row-fluid .ecco-index-form-module form select,.row-fluid .ecco-index-form-module form textarea {
+    color: #B4B4B4;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: none;
+}
+
+@media(max-width:767px){
+    body .container-fluid .row-fluid .ecco-index-form-module form .hs-button{
+        width:100%;
+    }
+
+    .ecco-index-form-module{
+        padding:50px 0px 68px;
+    }
+
+    .ecco-index-hero-slider-module-inner h1{
+        line-height:1.1;
+    }
+}
+/**************************************************/
+
+
+/****************Recent Post**********************/
+
+
+.services-education-section .hs_cos_wrapper{
+    background-color: #fff;
+}
+.services-education-section .recent-posts .date{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    color: #333;
+    opacity: .4;
+    margin-bottom: 5px;
+}
+
+.services-education-section h3 a{
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -0.6px;
+    color: #0a2360;
+}
+
+.services-education-section h3{
+    line-height:0;
+}
+
+.services-education-section .three-column-adjust-inner.hs_cos_wrapper{
+    border-radius: 4px;
+    box-shadow: 0 0 24px 0 rgba(0,0,0,0.04);
+    background-color: #fff;
+    padding:31px 32px;
+}
+
+.services-education-section .recent-posts .three-col-adjust{
+    padding-bottom: 47px;
+    padding-top: 14px;
+}
+
+
+.services-education-section .recent-posts .description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #333333;
+    opacity: .5;
+    margin-bottom: 0px;
+}
+
+
+body .container-fluid .row-fluid .services-education-section .recent-posts a.cta_button[title]{
+    background: transparent;
+    color: #333333;
+    padding: 0px;
+    border: 0px;
+    opacity:.5;
+    letter-spacing:0px;
+}
+
+body .container-fluid .row-fluid .services-education-section .recent-posts .button-section a.cta_button[title]{
+    border-radius: 4px;
+    background-color: #0a2360;
+    opacity: 1;
+    color: #fff;
+font-family: {{ popinsFontFamily }};
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 3px;
+text-align: center;
+color: #ffffff;
+padding: 16px 30px;
+min-width: 235px;
+}
+
+.services-education-section{
+    padding-bottom: 111px;
+}
+
+/**************************************************/
+
+.services-education-section .date{
+font-family: {{ popinsFontFamily }};
+}
+/*==================================================================
+News Page Styling
+=====================================================================*/
+
+.news-section{
+    padding: 34px 0 42px;
+
+}
+.news-section .tag{
+font-family: {{ helveticaFontFamily }};
+font-weight: bold;
+display: inline;
+padding-left: 3px;
+position: relative;
+top: -18px;
+
+}
+.news-section .section-heading{
+
+}
+/* .news-section */
+.news-section h2{
+font-family: {{ helveticaFontFamily }};
+font-weight: bold;
+padding-top: 18px;
+}
+.news-section h4{
+color: {{ secondaryTextColor }};
+font-size: 20px;
+padding-bottom: 6px;
+max-width: 600px;
+
+}
+.news-section ul{
+    margin-top: 44px;
+}
+
+.news-section ul li{
+font-family: {{ headingFontFamily }};
+color: #000;
+font-size: 16px;
+font-weight: bold;
+margin-left: 0;
+margin-bottom: 0;
+padding-bottom: 19px;
+line-height: normal;
+letter-spacing: normal;
+}
+.news-section ul li a{
+    color: #ff9f00;
+    font-weight: bold;
+}
+.news-section img{
+    height: 40px;
+    width: 41px;
+    border-radius: 50%;
+}
+
+/* animatedBackground */
+
+.news-section .wrapper{
+    background-repeat: no-repeat !important;
+
+    background-size: contain;
+    background-position: top right !important;
+    -webkit-animation: animatedBackground 2s ease-in-out;
+    animation: animatedBackground 2s ease-in-out;
+
+}
+
+
+
+@media (min-width: 768px) {
+    .news-section .right-col{
+        margin-left: 6.6%;
+    }
+    @-webkit-keyframes animatedBackground{
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100% 0;
+        }
+    }
+    @keyframes animatedBackground{
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100% 0;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media (max-width: 767px) {
+    .news-section ul{
+        margin: 0;
+    }
+    .news-section h2 {
+        padding-top: 14px;
+        padding-bottom: 11px;
+    }
+    .news-section h4 {
+        padding-bottom: 13px;
+    }
+    .news-section .news-article-section{
+        padding-top: 10px;
+    }
+    .news-section .wrapper{
+        background-position:center !important;
+
+    }
+}
+/*==================================================================
+End of News Page Styling
+=====================================================================*/
+
+
+
+
+/*==================================================================
+Contact Page Styling
+=====================================================================*/
+
+
+/*==================================================================
+Contact Banner Section  Styling
+=====================================================================*/
+
+
+.contact-banner-section{
+    padding: 106px 0 141px;
+    border-bottom: 12px solid;
+    position: relative;
+
+}
+.contact-banner-section:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    border-bottom: 12px solid #1c52a3;
+    bottom: 0;
+}
+.contact-banner-section h1{
+font-family: {{ heitiScFontFamily }};
+font-weight: 300;
+line-height: normal;
+letter-spacing: normal;
+}
+.contact-banner-section .social-share ul{
+    margin: 0;
+    text-align: center;
+
+}
+.contact-banner-section .social-share ul li:first-child{
+    margin-left: 0;
+}
+.contact-banner-section .social-share ul li{
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: 10px;
+
+}
+.contact-banner-section .social-share ul li img{
+    max-width: 13px;
+    position: relative;
+    top: -7px;
+
+}
+@media (max-width: 767px){
+    .contact-banner-section{
+        padding: 50px 0;
+
+    }
+    .contact-banner-section h1{
+        line-height: 1.2;
+    }
+}
+/*==================================================================
+End of Contact Banner Section  Styling
+=====================================================================*/
+
+
+
+
+
+.contact-section{
+    padding: 55px 0 100px;
+}
+.contact-section h3{
+font-family: {{ helveticaFontFamily }};
+font-size: 27px;
+font-weight: normal;
+line-height: normal;
+letter-spacing: normal;
+padding-top: 24px;
+padding-bottom: 34px;
+
+}
+.contact-section .logo-heading-section{
+    max-width: 429px;
+    margin: 0 auto;
+}
+.contact-section p span{
+font-family: {{ helveticaFontFamily }};
+display: block;
+font-size: 17px;
+font-weight: bold;
+line-height: 1.29;
+letter-spacing: normal;
+text-align: center;
+}
+.contact-section .hs-responsive-embed-wrapper.hs-responsive-embed {
+    border: 20px solid #1b51a2 !important;
+    border-radius: 60px;
+    width: auto !important;
+}
+.contact-section .contact-details{
+    padding-top: 55px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact-section .hs-responsive-embed-wrapper.hs-responsive-embed {
+        border: 15px solid #1b51a2 !important;
+        border-radius: 50px;
+    }
+}
+@media (max-width: 767px){
+    .contact-section{
+        padding: 40px 0;
+    }
+    .contact-section h3{
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+    }
+    .contact-section .hs-responsive-embed-wrapper.hs-responsive-embed {
+        border: 7px solid #1b51a2 !important;
+        border-radius: 30px;
+    }
+    .contact-section .contact-details{
+        padding-top: 22px;
+    }
+}
+/*==================================================================
+End of Contact Page Styling
+=====================================================================*/
+
+
+
+/*================================================================================================================
+ECCO ABOUT PAGE STYLING
+====================================================================================================================*/
+
+/*==================================================================
+Our Diffenrenc Section Styling
+=====================================================================*/
+
+@media (max-width: 767px) {
+    body .row-fluid .ecco-about-hero-banner .ecco-about-hero-banner-txt {
+        max-width: inherit;
+        margin: 0 auto;
+        float: none;
+        padding: 50px 0;
+    }
+    .ecco-about-hero-banner .ecco-about-hero-banner-txt h1{
+        padding-bottom: 0;
+        line-height: 1.2;
+    }
+    body .row-fluid .ecco-about-hero-banner .ecco-about-hero-banner-txt ul {
+        margin: 0px;
+        padding-top: 8px;
+    }
+}
+
+/*==================================================================
+End of Our Diffenrenc Section Styling
+=====================================================================*/
+
+
+/*==================================================================
+Meet Experts Styling
+=====================================================================*/
+.ecco-about-two-column .description a{
+    font-size: 16px;
+    line-height: 1.88;
+font-family: {{ helveticaFontFamily }};
+color: #53658f;
+}
+.ecco-about-two-column .eccotwo-col-sec.reverse-column .image-module{
+    padding-right: 0;
+}
+@media (max-width: 767px) {
+
+    .ecco-about-two-column{
+        padding-top: 40px;
+        text-align: center;
+    }
+    .ecco-about-two-column .ecco-about-two-column-heading p {
+        padding-top: 9px;
+        margin-bottom: 2px;
+    }
+    .ecco-about-two-column .eccotwo-col-sec {
+        padding-top: 5px;
+    }
+    .ecco-about-two-column .description h4 {
+
+        max-width: inherit;
+    }
+    .image-module img{
+        margin: 0 auto 25px;
+        display: block;
+    }
+    .ecco-about-two-column .eccotwo-col-sec .image-module {
+        padding-right: 0;
+    }
+    .ecco-about-two-column .description p{
+        padding-bottom: 0;
+        max-width: inherit;
+    }
+    .ecco-about-two-column .name-position h4 {
+        padding-bottom: 0;
+    }
+    .ecco-about-two-column .description h4 {
+        padding-bottom: 0;
+    }
+
+    .eccotwo-col-sec.reverse-column .name-position, .eccotwo-col-sec.reverse-column .description {
+        text-align: center;
+    }
+    .ecco-about-two-column .eccotwo-col-sec.reverse-column .image-module {
+
+        padding-lefT: 0;
+    }
+    .eccotwo-col-sec.reverse-column>.row-fluid-wrapper>.row-fluid {
+        display: block;
+        /*     margin-top: 92px;
+        margin-bottom: 20px; */
+        margin-top: 20px;
+    }
+
+}
+/*==================================================================
+End of  Meet Experts Styling
+=====================================================================*/
+
+/*==================================================================
+Medical Experts Styling
+=====================================================================*/
+
+
+@media (max-width: 767px) {
+    .medical-association{
+        padding: 40px 0;
+    }
+    body .row-fluid .medical-association ul{
+        padding: 0;
+        margin-bottom: 0;
+    }
+    body .row-fluid .medical-association ul li {
+        display:block;
+        margin: 0 auto 20px;
+    }
+}
+/*==================================================================
+End of Medical Experts Styling
+=====================================================================*/
+
+
+/*==================================================================
+Patient Styling
+=====================================================================*/
+
+
+@media (max-width: 767px) {
+    .ecco-about-three-column-module{
+        padding: 40px 0;
+        text-align: center;
+    }
+    .ecco-about-three-column-module .ecco-about-threeheading h2 {
+        padding-bottom: 0;
+    }
+    .ecco-about-three-column-module .ecco-about-threeheading {
+        padding-bottom: 0;
+    }
+
+    body .row-fluid .ecco-about-three-column-module .three-col-adjust span>.hs_cos_wrapper{
+        margin-top: 30px;
+    }
+    .ecco-about-three-column-module .ecco-about-3-column-inner:nth-child(2) p {
+        padding-top: 0;
+    }
+    .ecco-about-three-column-module .ecco-about-3-column-inner:nth-child(2) img{
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 969px) and (max-width: 1024px){
+    .ecco-about-differ-module{
+        transform: scale(0.9);
+    }
+    body .row-fluid .ecco-about-differ-module .three-col-adjust span>.hs_cos_wrapper:after,
+    body .row-fluid .ecco-about-differ-module .three-col-adjust span>.hs_cos_wrapper:nth-child(2):after{
+        right: -93px;
+        top: 25.5%;
+    }
+    body .row-fluid .ecco-about-differ-module .three-col-adjust span>.hs_cos_wrapper:before{
+        top: -18px;
+    }
+    .ecco-about-differ-inner:before{
+        bottom: -29.4%;
+        left: -16px;
+    }
+    body .row-fluid .ecco-about-differ-module .three-col-adjust span>.hs_cos_wrapper:nth-child(3) .ecco-about-differ-inner:before{
+        bottom: -32.3%;
+        left: -16px;
+    }
+    body .row-fluid .ecco-about-differ-module .three-col-adjust span>.hs_cos_wrapper:nth-child(2) .ecco-about-differ-inner:before{
+        bottom: -34.3%;
+        left: -16px;
+    }
+    body .row-fluid .ecco-about-differ-module .three-col-adjust span>.hs_cos_wrapper:nth-child(3) .ecco-about-differ-inner:after {
+
+        bottom: -8%;
+        left: -14%;
+    }
+    body .row-fluid .ecco-about-differ-module .three-col-adjust span>.hs_cos_wrapper:first-child .ecco-about-differ-inner:after{
+        bottom: -8%;
+        left: -14%;
+    }
+    body .row-fluid .ecco-about-differ-module .three-col-adjust span>.hs_cos_wrapper:nth-child(2) .ecco-about-differ-inner:after{
+        bottom: -8%;
+        left: -14%;
+    }
+}
+/*==================================================================
+End of Patient Styling
+=====================================================================*/
+
+/*================================================================================================================
+ECCO ABOUT PAGE STYLING
+====================================================================================================================*/
+

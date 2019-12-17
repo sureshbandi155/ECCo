@@ -1,0 +1,118 @@
+/*==================================================================
+News Page Styling
+=====================================================================*/
+
+.insurance-section{
+    padding: 34px 0 42px;
+
+}
+.insurance-section .tag{
+font-family: {{ helveticaFontFamily }};
+font-weight: bold;
+display: inline;
+padding-left: 3px;
+position: relative;
+top: -18px;
+
+}
+.insurance-section .section-heading{
+
+}
+/* .insurance-section */
+.insurance-section h2{
+font-family: {{ helveticaFontFamily }};
+font-weight: bold;
+padding-top: 18px;
+}
+.insurance-section h4{
+color: {{ secondaryTextColor }};
+font-size: 20px;
+padding-bottom: 6px;
+max-width: 600px;
+
+}
+.insurance-section ul{
+    margin-top: 44px;
+}
+
+.insurance-section ul li{
+font-family: {{ headingFontFamily }};
+color: #000;
+font-size: 16px;
+font-weight: bold;
+margin-left: 0;
+margin-bottom: 0;
+padding-bottom: 19px;
+line-height: normal;
+letter-spacing: normal;
+}
+.insurance-section ul li a{
+    color: #ff9f00;
+    font-weight: bold;
+}
+.insurance-section img{
+    height: 40px;
+    width: 41px;
+    border-radius: 50%;
+}
+
+/* animatedBackground */
+
+.insurance-section .wrapper{
+    background-repeat: no-repeat !important;
+
+    background-size: contain;
+    background-position: top right !important;
+    -webkit-animation: animatedBackground 2s ease-in-out;
+    animation: animatedBackground 2s ease-in-out;
+
+}
+
+
+
+@media (min-width: 768px) {
+    .insurance-section .right-col{
+        margin-left: 6.6%;
+    }
+    @-webkit-keyframes animatedBackground{
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100% 0;
+        }
+    }
+    @keyframes animatedBackground{
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100% 0;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media (max-width: 767px) {
+    .insurance-section ul{
+        margin: 0;
+    }
+    .insurance-section h2 {
+        padding-top: 14px;
+        padding-bottom: 11px;
+    }
+    .insurance-section h4 {
+        padding-bottom: 13px;
+    }
+    .insurance-section .news-article-section{
+        padding-top: 10px;
+    }
+    .insurance-section .wrapper{
+        background-position:center !important;
+
+    }
+}
+/*==================================================================
+End of News Page Styling
+=====================================================================*/
